@@ -142,3 +142,21 @@ body{
   height: 80px;
 }
 
+.footerwraper{
+  width: 100%;
+  height: 30vh;
+  background-color: rgb(252, 137, 71);
+}
+
+.content-footer{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px;
+
+}
+.icon-info{
+  margin-top: 50px;
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+}
