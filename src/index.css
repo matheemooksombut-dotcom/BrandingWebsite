@@ -1,0 +1,75 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1,h2,h3,h4,h5,h6{
+  margin:0;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.Content-section{
+  padding-top: 200px;
+  padding-left: 100px;
+  width: 500px;
+}
+
+.headersection{
+  width: 100%;
+  height: 60vh;
+  background-image: url(./assets/HeaderSectionWebsite.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  
+}
+
+.btn-getproductive{
+  background-color: black;
+  color: white;
+  width: 200px;
+  height: 50px;
+  font-size: medium;
+}
+.navbar-section{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px;
+  font-size: large;
+  font-weight: bold
+}
+
+.branding-section{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px
+}
+
+.brading-section-1,.brading-section-2, .brading-section-3 , .brading-section-4{
+  width: 300px;
+  height: 120px;
+}
+
+
+.brading-section-1 img,.brading-section-2 img, .brading-section-3 img ,  .brading-section-4 img{
+  
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+
+}
+.branding-font{
+  margin-top: 20px;
+  text-align: center;
+}
