@@ -6,7 +6,9 @@ import branding4 from './assets/branding4.png'
 import box from './assets/box-solid-full.svg'
 import cart from './assets/cart-arrow-down-solid-full.svg'
 import pay from './assets/amazon-brands-solid-full.svg'
-
+import showimg1 from './assets/Showimg-1.jpg'
+import showimg2 from './assets/Showimg-2.jpg'
+import showimg3 from './assets/Showimg-3.jpg'
 
 
 
@@ -18,7 +20,7 @@ function Branding() {
       <h1 className='branding-font'>แบรนด์</h1>
         <div className='branding-section'>
             <div className="brading-section-1">
-                <img src={branding1} alt="" />
+                <img src={branding1}  alt="" />
             </div>
             <div className="brading-section-2">
                  <img src={branding2} alt="" />
@@ -32,7 +34,21 @@ function Branding() {
         </div>
 
       <div className='content-branding'>
-        
+        <div className='showimg-1'>
+          <img src={showimg1} alt="" />
+          <h2>Check skin health</h2>
+        </div>
+
+         <div className='showimg-2'>
+          <img src={showimg2} alt="" />
+          <h2>Skin Care</h2>
+        </div>
+
+
+         <div className='showimg-3'>
+          <img src={showimg3} alt="" />
+          <h2>Serum</h2>
+        </div>
       </div>
 
 
