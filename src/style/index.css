@@ -181,3 +181,81 @@ body{
   text-decoration: none;
   color: inherit;
 }
+.fontcontent{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-items{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  row-gap: 100px;
+
+  column-gap: 400px;
+  grid-template-rows:auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+ 
+}
+.tag{
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.itmes-1{
+  width: auto;
+  height: auto;
+ 
+  
+}
+.itmes-2{
+  width: auto;
+  height: auto;
+}
+.itmes-3{
+  width: auto;
+  height: auto;
+}
+
+.box-img{
+  overflow: hidden;
+}
+
+.box-img img{
+  transition: transform 0.5s;
+}
+
+.box-img img:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+
+.box-img{
+  
+  width: 500px;
+  height: 300px;
+}
+
+.box-img img{
+  
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.flex-position{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+

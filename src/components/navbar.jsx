@@ -13,7 +13,9 @@ function Navbar() {
               
               <div className='boxitem'>กล่องรายเดือน</div>
             </Link>
-            <div className='Contract-us'>ติดต่อ</div>
+            <div className='Contract-us' onClick={()=>{
+              document.getElementById("contact").scrollIntoView({behavior:"smooth"})
+            }}>ติดต่อ</div>
             <div className='market'>รถเข็น</div>
       </div>
     </>

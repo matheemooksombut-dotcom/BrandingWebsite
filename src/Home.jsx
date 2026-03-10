@@ -10,7 +10,9 @@ function Home() {
       <Navbar />
       <Headersection />
       <Branding />
-      <Footer />
+      <div id="contact">
+        <Footer />
+      </div>
     </>
   )
 }
