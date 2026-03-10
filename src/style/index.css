@@ -24,10 +24,26 @@ body{
   width: 500px;
 }
 
+.Contract-us:hover{
+   border-top: 4px solid black;
+  cursor: pointer;
+}
+
+.market:hover{
+   border-top: 4px solid black;
+  cursor: pointer;
+}
+
+
+.boxitem:hover{
+  border-top: 4px solid black;
+  cursor: pointer;
+ 
+}
 .headersection{
   width: 100%;
   height: 60vh;
-  background-image: url(./assets/HeaderSectionWebsite.png);
+  background-image: url(./public/HeaderSectionWebsite.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -159,4 +175,9 @@ body{
   display: flex;
   list-style: none;
   justify-content: space-evenly;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: inherit;
 }
