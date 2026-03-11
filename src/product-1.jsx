@@ -36,7 +36,8 @@ function Product1() {
 
           <div className='Details-Products'>
               <h2>$500.00</h2>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, iste!</p>
+              <p>รายการราคา *</p>
+              
           </div>
           
       </div>
