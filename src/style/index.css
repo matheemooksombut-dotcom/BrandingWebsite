@@ -303,9 +303,9 @@ body{
 
 }
 .Details-Products{
-   padding: 50px; 
+  padding: 50px;
+  width: 200px;
 }
-
 .content-box-products{
  
   padding: 50px; 
@@ -314,4 +314,34 @@ body{
   width: 500px;
   height: 200px;
 
+}
+.option-1{
+  display: flex;
+  gap: 12px;
+  border: 1px solid #333;
+  padding: 15px;
+  margin-bottom: 12px;
+  cursor: pointer; 
+}
+
+
+.option-2{
+  display: flex;
+  gap: 12px;
+  border: 1px solid #333;
+  padding: 15px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  
+}
+
+
+.option-3{
+  display: flex;
+  gap: 12px;
+  border: 1px solid #333;
+  padding: 15px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  
 }

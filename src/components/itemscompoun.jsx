@@ -21,7 +21,7 @@ function Itemscompoun() {
                     <div className='tag'>
                         <h2>กล่องประจำเดือน</h2>
                         <br />
-                        <h4>300$/เดือน</h4>
+                        <h4>฿1,500.00/เดือน</h4>
                     </div>
                     
                 </div>
@@ -35,7 +35,7 @@ function Itemscompoun() {
                     <div className='tag'>
                         <h2>กล่องกรูมมิ่ง</h2>
                         <br />
-                        <h4>300$/เดือน</h4>
+                        <h4>฿1,500.00/เดือน</h4>
                     </div>
                     
                 </div>
@@ -50,7 +50,7 @@ function Itemscompoun() {
                         <div className='tag'>
                                 <h2>กล่องบอดี้แอนด์โซล ลิมิเต็ดอิดิชัน</h2>
                                 <br />
-                                <h4>300$/เดือน</h4>
+                                <h4>฿1,500.00/เดือน</h4>
                         </div>
                     </div>
             </Link>
@@ -64,7 +64,7 @@ function Itemscompoun() {
                         <div className='tag'>
                                 <h2>กล่องเพียวบิวตี้</h2>
                                 <br />
-                                <h4>300$/เดือน</h4>
+                                <h4>฿1,500.00/เดือน</h4>
                             </div>
                     </div>
             </Link>

@@ -1,7 +1,10 @@
 import '../src/style/index.css'
 import Navbar from "./components/navbar.jsx"
 import Footer from './components/footer.jsx'
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
 function Product1() {
+  const [selected, setSelected] = useState("");
   return (
     <>
       <Navbar />
@@ -35,10 +38,61 @@ function Product1() {
           <br />
 
           <div className='Details-Products'>
-              <h2>$500.00</h2>
+              <h2>฿1,500.00</h2>
               <p>รายการราคา *</p>
-              
+              <label className="price-box">
+
+                 <div className='option-1'>
+                    <input type='radio' name='price' value="once" checked={selected ==="once"}
+                    onChange={(e) => setSelected(e.target.value)} />
+                    <br />
+                      <div>
+                  <div>ซื้อแบบครั้งเดียว</div>
+                    <div className="price">฿1,500.00</div>
+                  </div>
+
+                    
+                </div>
+               
+                <div className='option-2'>
+                  <input type='radio' name='price' value="once" checked={selected ==="once"}
+                  onChange={(e) => setSelected(e.target.value)} />
+                  <br />
+                    <div>
+                <div>3 เดือน</div>
+                
+                  <div className="price">฿1,500.00
+                    <br /><span>ทุกๆ 3 เดือน</span>
+                  </div>
+                  
+                </div>
+
+                  
+                </div>
+
+                <div className='option-3'>
+                  <input type='radio' name='price' value="once" checked={selected ==="once"}
+                  onChange={(e) => setSelected(e.target.value)} />
+                  <br />
+                    <div>
+                <div>6 เดือน </div>
+                  <div className="price">฿1,500.00
+                    <br /><span>  ทุกๆ 6 เดือน</span></div>
+                </div>
+
+                  
+                </div>
+               
+              </label>
           </div>
+
+
+               
+
+
+
+
+                
           
       </div>
       
