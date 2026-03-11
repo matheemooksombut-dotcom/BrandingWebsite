@@ -16,6 +16,7 @@ h1,h2,h3,h4,h5,h6{
 body{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;;
 }
 
 .Content-section{
@@ -49,6 +50,15 @@ body{
   background-position: center;
 
   
+}
+.Details-product{
+  width: 1200px;
+  height: 300px;
+}
+
+.Data-product{
+  display: flex;
+  justify-content: space-around;
 }
 
 .btn-getproductive{
@@ -160,6 +170,8 @@ body{
 
 .footerwraper{
   width: 100%;
+  padding: auto;
+  margin-top: 50px;
   height: 30vh;
   background-color: rgb(252, 137, 71);
 }
@@ -289,12 +301,14 @@ body{
 .box-products-wrapper{
     display: flex;
     justify-content: center;
-    align-items: center;
+   
 
 }
 .content-box-products{
   display: flex;
   justify-content: space-around;
+  column-gap: 100px;
+  padding: 50px;
 
   
 }

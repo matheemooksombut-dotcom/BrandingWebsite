@@ -20,11 +20,21 @@ function Product1() {
       <div className='box-products-wrapper'>
           <div className="content-box-products">
               <div className='Content-product'>
-                <p>11</p>
+                <h2>กล่องประจำเดือน</h2>
+                <p>SKU:001</p>
+                <p>นี่คือคำอธิบายสินค้า ที่ตรงนี้เหมาะอย่างยิ่งสำหรับ “ขาย” สินค้าของคุณและดึงดูดความสนใจของผู้ซื้อ อธิบายสินค้าของคุณอย่างกระชับและชัดเจน ใช้คีย์เวิร์ดเฉพาะ เขียนคำอธิบายของคุณเองแทนที่จะใช้คำโฆษณาจากผู้ผลิต</p>
+                <br />
+                
+                <div className='Data-product'>
+                    <b><p>ข้อมูลสินค้า</p></b>
+                   <b> <p>นโยบายสินค้า</p></b>
+                   <b> <p>ข้อมูลการจัดส่ง</p></b>
+                </div>
               </div>
-              
           </div>
-      </div>
+          <br />
+          
+        </div>
       
       
         <div id="contact">
