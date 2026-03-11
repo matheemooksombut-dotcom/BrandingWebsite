@@ -278,10 +278,8 @@ body{
 
 .Product1-img{
  
-
-  
-  width: 500px;
-  height: 400px;
+  width: 1600px;
+  height: 600px;
 }
 .Product1-img img{
   background-position: center;
@@ -300,15 +298,20 @@ body{
 
 .box-products-wrapper{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
    
 
 }
-.content-box-products{
-  display: flex;
-  justify-content: space-around;
-  column-gap: 100px;
-  padding: 50px;
+.Details-Products{
+   padding: 50px; 
+}
 
-  
+.content-box-products{
+ 
+  padding: 50px; 
+}
+.Content-product{
+  width: 500px;
+  height: 200px;
+
 }

@@ -33,8 +33,13 @@ function Product1() {
               </div>
           </div>
           <br />
+
+          <div className='Details-Products'>
+              <h2>$500.00</h2>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, iste!</p>
+          </div>
           
-        </div>
+      </div>
       
       
         <div id="contact">
