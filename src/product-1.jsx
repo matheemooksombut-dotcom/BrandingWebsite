@@ -62,6 +62,7 @@ function Product1() {
                 <div>3 เดือน</div>
                 
                   <div className="price">฿1,500.00
+                    
                     <br /><span>ทุกๆ 3 เดือน</span>
                   </div>
                   
