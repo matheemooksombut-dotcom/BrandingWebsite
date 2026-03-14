@@ -4,7 +4,15 @@ import Footer from './components/footer.jsx'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 function Product1() {
-  const [selected, setSelected] = useState("");
+ const [selected, setSelected] = useState([]);
+
+const handleChange = (value) => {
+  if (selected.includes(value)) {
+    setSelected(selected.filter(item => item !== value));
+  } else {
+    setSelected([...selected, value]);
+  }
+};
   return (
     <>
       <Navbar />
@@ -43,8 +51,8 @@ function Product1() {
               <label className="price-box">
 
                  <div className='option-1'>
-                    <input type='radio' name='price' value="once" checked={selected ==="once"}
-                    onChange={(e) => setSelected(e.target.value)} />
+                    <input type='radio' name='price' value="once" checked={selected.includes("once")}
+                    onChange={() => handleChange(once)} />
                     <br />
                       <div>
                   <div>ซื้อแบบครั้งเดียว</div>
@@ -55,8 +63,8 @@ function Product1() {
                 </div>
                
                 <div className='option-2'>
-                  <input type='radio' name='price' value="once" checked={selected ==="once"}
-                  onChange={(e) => setSelected(e.target.value)} />
+                  <input type='radio' name='price' value="once" checked={selected.includes("once")}
+                  onChange={() =>  handleChange(once)} />
                   <br />
                     <div>
                 <div>3 เดือน</div>
@@ -72,8 +80,8 @@ function Product1() {
                 </div>
 
                 <div className='option-3'>
-                  <input type='radio' name='price' value="once" checked={selected ==="once"}
-                  onChange={(e) => setSelected(e.target.value)} />
+                  <input type='radio' name='price' value="once" checked={selected.includes("once")}
+                  onChange={() => handleChange(once)} />
                   <br />
                     <div>
                 <div>6 เดือน </div>
@@ -86,15 +94,6 @@ function Product1() {
                
               </label>
           </div>
-
-
-               
-
-
-
-
-                
-          
       </div>
       
       
