@@ -4,15 +4,9 @@ import Footer from './components/footer.jsx'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 function Product4() {
- const [selected, setSelected] = useState([]);
+const [detailText, setDetailText] = useState("");
+const [selected, setSelected] = useState("");
 
-const handleChange = (value) => {
-  if (selected.includes(value)) {
-    setSelected(selected.filter(item => item !== value));
-  } else {
-    setSelected([...selected, value]);
-  }
-};
   return (
     <>
       <Navbar />
@@ -37,10 +31,16 @@ const handleChange = (value) => {
                 <br />
                 
                 <div className='Data-product'>
-                    <b><p>ข้อมูลสินค้า</p></b>
-                   <b> <p>นโยบายสินค้า</p></b>
-                   <b> <p>ข้อมูลการจัดส่ง</p></b>
+                    <b><p className='details-productive1' onClick={()=> setDetailText("นี่คือข้อมูลสินค้า  ipsum dolor sit amet consectetur adipisicing elit. Cumque temporibus voluptate eos consequuntur repellat esse dolorum. Sequi similique impedit nobis.")}>ข้อมูลสินค้า</p>
+                    
+                   
+                    </b>
+                   <b> <p className='details-productive2' onClick={()=>setDetailText("นี้คือนโยบาย  ipsum dolor sit amet consectetur adipisicing elit. Cumque temporibus voluptate eos consequuntur repellat esse dolorum. Sequi similique impedit nobis.")}>นโยบายสินค้า</p></b>
+                   <b> <p className='details-productive3' onClick={()=>setDetailText("นี้คือข้อมูลการจัดส่ง  ipsum dolor sit amet consectetur adipisicing elit. Cumque temporibus voluptate eos consequuntur repellat esse dolorum. Sequi similique impedit nobis.")}>ข้อมูลการจัดส่ง</p></b>
+                  
                 </div>
+                 <br />
+                   <p>{detailText}</p>
               </div>
           </div>
           <br />
@@ -50,9 +50,9 @@ const handleChange = (value) => {
               <p>รายการราคา *</p>
               <label className="price-box">
 
-                 <div className='option-1'>
-                    <input type='radio' name='price' value="once" checked={selected.includes("once")}
-                    onChange={() => handleChange(once)} />
+                  <div className='option-1'>
+                    <input type='radio' name='price' value="once" checked={selected ==="once"}
+                    onChange={(e) =>  setSelected(e.target.value)} />
                     <br />
                       <div>
                   <div>ซื้อแบบครั้งเดียว</div>
@@ -63,8 +63,8 @@ const handleChange = (value) => {
                 </div>
                
                 <div className='option-2'>
-                  <input type='radio' name='price' value="once" checked={selected.includes("once")}
-                  onChange={() =>  handleChange(once)} />
+                  <input type='radio' name='price' value="3month" checked={selected===("3month")}
+                  onChange={(e) =>  setSelected(e.target.value)} />
                   <br />
                     <div>
                 <div>3 เดือน</div>
@@ -80,8 +80,8 @@ const handleChange = (value) => {
                 </div>
 
                 <div className='option-3'>
-                  <input type='radio' name='price' value="once" checked={selected.includes("once")}
-                  onChange={() => handleChange(once)} />
+                  <input type='radio' name='price' value="6month" checked={selected==="6month"}
+                  onChange={(e) => setSelected(e.target.value)} />
                   <br />
                     <div>
                 <div>6 เดือน </div>
