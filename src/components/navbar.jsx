@@ -1,10 +1,12 @@
-import { useState } from 'react'
+
 import { Link } from "react-router-dom"
 
+function Navbar({count}) {
 
 
-function Navbar() {
-  const [count, setCount] = useState(0)
+  
+
+  
 
   return (
     <>
@@ -20,7 +22,10 @@ function Navbar() {
             <div className='Contract-us' onClick={()=>{
               document.getElementById("contact").scrollIntoView({behavior:"smooth"})
             }}>ติดต่อ</div>
-            <div className='market'>รถเข็น<span>(0)</span></div>
+           <div className='market'>
+                รถเข็น ({count})
+            </div>
+
       </div>
     </>
   )

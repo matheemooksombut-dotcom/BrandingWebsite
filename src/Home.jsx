@@ -5,6 +5,7 @@ import Branding from './components/branding.jsx'
 import Footer from './components/footer.jsx'
 
 function Home() {
+  
   return (
     <>
       <Navbar />

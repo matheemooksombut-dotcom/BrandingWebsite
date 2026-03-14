@@ -3,13 +3,14 @@ import Navbar from "./components/navbar.jsx"
 import Footer from './components/footer.jsx'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-function Product4() {
+function Product4({ count,setCount}) {
 const [detailText, setDetailText] = useState("");
 const [selected, setSelected] = useState("");
 
+
   return (
     <>
-      <Navbar />
+      <Navbar count={count}/>
 
      <div className="flex-product">
           <div className="Product1-section">
@@ -93,6 +94,7 @@ const [selected, setSelected] = useState("");
                 </div>
                
               </label>
+              <button className="add-to-cart-button"onClick={()=>setCount(prev=>prev+1)}>เพิ่มลงตระกร้า</button>
           </div>
       </div>
       

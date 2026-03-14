@@ -3,18 +3,19 @@ import Navbar from "./components/navbar.jsx"
 import Footer from './components/footer.jsx'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-function Product1() {
+function Product1({ count,setCount}) {
 const [detailText, setDetailText] = useState("");
 const [selected, setSelected] = useState("");
+
  return (
     <>
-      <Navbar />
+      <Navbar count={count}/>
 
      <div className="flex-product">
           <div className="Product1-section">
 
             <div className="Product1-img">
-                <img src="../../public/box-1.png" alt="" />
+                <img src="/box-1.png" alt="" />
             </div>
           </div>
 
@@ -45,7 +46,7 @@ const [selected, setSelected] = useState("");
           </div>
           <br />
 
-          <div iv className='Details-Products'>
+          <div  className='Details-Products'>
               <h2>฿1,500.00</h2>
               <p>รายการราคา *</p>
               <label className="price-box">
@@ -93,6 +94,7 @@ const [selected, setSelected] = useState("");
                 </div>
                
               </label>
+              <button className="add-to-cart-button" onClick={()=>setCount(prev=>prev+1)}>เพิ่มลงตระกร้า</button>
           </div>
       </div>
       
