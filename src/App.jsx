@@ -12,8 +12,8 @@ function App() {
   const [count, setCount] = useState(0)
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/items" element={<Items />} />
+      <Route path="/" element={<Home count={count}/>} />
+      <Route path="/items" element={<Items count={count}/>} />
       <Route path="/product-1" element={<Product1 count={count} setCount={setCount} />} />
       <Route path="/product-2" element={<Product2 count={count} setCount={setCount}/>} />
       <Route path="/product-3" element={<Product3 count={count} setCount={setCount}/>} />
