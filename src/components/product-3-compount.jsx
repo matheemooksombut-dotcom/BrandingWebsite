@@ -26,7 +26,7 @@ const handleAddToCart = () => {
     ...(option.interval && { interval: option.interval })
   }
   onAddToCart?.(item)
-  setCount?.(prev => prev + 1)
+  
 }
 
     return (
