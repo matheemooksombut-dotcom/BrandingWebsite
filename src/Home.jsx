@@ -5,11 +5,11 @@ import Branding from './components/branding.jsx'
 import Footer from './components/footer.jsx'
 import { useState } from 'react'
 
-function Home({ count,setCount}) {
+function Home({ count,cartItems}) {
   
   return (
     <>
-      <Navbar count={count}/>
+      <Navbar count={count} />
       <Headersection />
       <Branding />
       <div id="contact">

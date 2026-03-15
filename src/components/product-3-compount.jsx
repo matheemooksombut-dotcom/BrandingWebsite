@@ -36,7 +36,7 @@ const handleAddToCart = () => {
           <div className="Product1-section">
 
             <div className="Product1-img">
-                <img src="/box-1.png" alt="" />
+                <img id='product-img-3' src="/box-1.png" alt="" />
             </div>
           </div>
       </div> 

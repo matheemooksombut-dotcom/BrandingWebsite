@@ -6,7 +6,7 @@ import { useState } from 'react'
 function Items({ count,setCount}) {
   return (
     <>
-      <Navbar count={count}/>
+      <Navbar count={count}  />
       <Itemscompoun />
       <div id="contact">
         <Footer />

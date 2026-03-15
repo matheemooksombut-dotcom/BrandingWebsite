@@ -10,14 +10,15 @@ import Product4 from "./product-4.jsx"
 
 function App() {
   const [count, setCount] = useState(0)
+  const [cartItems, setCartItems] = useState([])
   return (
     <Routes>
-      <Route path="/" element={<Home count={count}/>} />
-      <Route path="/items" element={<Items count={count}/>} />
-      <Route path="/product-1" element={<Product1 count={count} setCount={setCount} />} />
-      <Route path="/product-2" element={<Product2 count={count} setCount={setCount}/>} />
-      <Route path="/product-3" element={<Product3 count={count} setCount={setCount}/>} />
-      <Route path="/product-4" element={<Product4 count={count} setCount={setCount}/>} />
+      <Route path="/" element={<Home count={count} cartItems={cartItems} />} />
+      <Route path="/items" element={<Items count={count} cartItems={cartItems} />} />
+      <Route path="/product-1" element={<Product1 count={count} setCount={setCount} cartItems={cartItems} setCartItems={setCartItems} />} />
+      <Route path="/product-2" element={<Product2 count={count} setCount={setCount} cartItems={cartItems} setCartItems={setCartItems} />} />
+      <Route path="/product-3" element={<Product3 count={count} setCount={setCount} cartItems={cartItems} setCartItems={setCartItems} />} />
+      <Route path="/product-4" element={<Product4 count={count} setCount={setCount} cartItems={cartItems} setCartItems={setCartItems} />} />
     </Routes>
   )
 }

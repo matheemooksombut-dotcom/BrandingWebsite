@@ -13,7 +13,7 @@ const handleAddToCart = (item) => {
 
   return (
     <>
-      <Navbar count={count} />
+      <Navbar count={count}   />
       <Productcompount4 count={count} setCount={setCount} onAddToCart={handleAddToCart} />      
         <div id="contact">
           <Footer />

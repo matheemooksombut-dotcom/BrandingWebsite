@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
 
-function Navbar({ count }) {
+function Navbar({ count, cartItems = [] }) {
   const [sidebarOpen, setSidebarOpen] = useState(false)
 
   return (
@@ -44,10 +44,29 @@ function Navbar({ count }) {
           </button>
         </div>
         <div className='cart-sidebar-body'>
-          {count === 0 ? (
+          {cartItems.length === 0 ? (
             <p className='cart-sidebar-empty'>ยังไม่มีสินค้าในตะกร้า</p>
           ) : (
-            <p className='cart-sidebar-hint'>มี {count} รายการในตะกร้า</p>
+            cartItems.map((item, index) => (
+              <div key={index} className="cart-item">
+                  {/* รูปจาก PRODUCT */}
+              {item.imageSrc && (
+                <img
+                  src={item.imageSrc}
+                  alt={item.name}
+                  className="cart-item-image"
+                />
+              )}
+               {/* ข้อมูลจาก PRODUCT */}
+              <p>{item.name}</p>
+              <p>SKU: {item.sku}</p>   
+              {/* ข้อมูล option ที่เลือก */}
+              <p>{item.optionLabel}</p>
+              <p>{item.price}</p>
+              {item.interval && <p>{item.interval}</p>}
+              </div>
+          ))
+            
           )}
         </div>
       </aside>

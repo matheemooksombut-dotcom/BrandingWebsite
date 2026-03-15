@@ -14,14 +14,14 @@ const handleAddToCart = (item) => {
 
   return (
     <>
-      <Navbar count={count} />
+      <Navbar count={count}   />
       <Productcompount2 count={count} setCount={setCount} onAddToCart={handleAddToCart} />      
         <div id="contact">
           <Footer />
         </div>
 
 
-
+    
 
 
     </>
