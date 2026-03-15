@@ -3,14 +3,18 @@ import Navbar from "./components/navbar.jsx"
 import Footer from './components/footer.jsx'
 import Productcompount1 from './components/product-1-compount.jsx';
 import { useState } from 'react'
-function Product1({ count,setCount}) {
-const [detailText, setDetailText] = useState("");
-const [selected, setSelected] = useState("");
+function Product1({ count, setCount }) {
+const [cartItems, setCartItems] = useState([])
+
+const handleAddToCart = (item) => {
+  setCartItems(prev => [...prev, item])
+  setCount(prev => prev + 1)
+}
 
  return (
     <>
       <Navbar count={count}/>
-      <Productcompount1 count={count} setCount={setCount} />
+      <Productcompount1 count={count} setCount={setCount} onAddToCart={handleAddToCart} />
       <div id="contact">
           <Footer />
       </div>

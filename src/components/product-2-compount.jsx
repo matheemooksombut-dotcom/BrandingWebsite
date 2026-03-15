@@ -1,8 +1,33 @@
 
 import { useState } from 'react'
-function Productcompount2({ count,setCount}) {
+
+const PRODUCT = { sku: '002', name: 'กล่องประจำเดือน' }
+const OPTIONS = {
+  once: { label: 'ซื้อแบบครั้งเดียว', price: '฿1,500.00' },
+  '3month': { label: '3 เดือน', price: '฿1,500.00', interval: 'ทุกๆ 3 เดือน' },
+  '6month': { label: '6 เดือน', price: '฿1,500.00', interval: 'ทุกๆ 6 เดือน' }
+}
+
+function Productcompount2({ count, setCount, onAddToCart }) {
 const [detailText, setDetailText] = useState("");
 const [selected, setSelected] = useState("");
+
+const handleAddToCart = () => {
+  if (!selected) {
+    alert('กรุณาเลือกรายการราคา')
+    return
+  }
+  const option = OPTIONS[selected]
+  const item = {
+    ...PRODUCT,
+    optionKey: selected,
+    optionLabel: option.label,
+    price: option.price,
+    ...(option.interval && { interval: option.interval })
+  }
+  onAddToCart?.(item)
+  setCount?.(prev => prev + 1)
+}
 
     return (
     <>
@@ -87,7 +112,7 @@ const [selected, setSelected] = useState("");
                 </div>
                
               </label>
-              <button className="add-to-cart-button" onClick={()=>setCount(prev=>prev+1)}>เพิ่มลงตระกร้า</button>
+              <button className="add-to-cart-button" onClick={handleAddToCart}>เพิ่มลงตระกร้า</button>
           </div>
       </div>
     </>
