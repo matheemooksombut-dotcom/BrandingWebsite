@@ -64,11 +64,14 @@ function Navbar({ count, cartItems = [] }) {
               <p>{item.optionLabel}</p>
               <p>{item.price}</p>
               {item.interval && <p>{item.interval}</p>}
+              <button>ลบรายการ</button>
               </div>
+              
           ))
             
           )}
         </div>
+        
       </aside>
     </>
   )

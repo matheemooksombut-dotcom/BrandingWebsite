@@ -1,7 +1,10 @@
 
 import { useState } from 'react'
 
-const PRODUCT = { sku: '003', name: 'กล่องประจำเดือน' }
+const PRODUCT = { sku: '003', 
+  name: 'กล่องประจำเดือน',
+  imageSrc: '/box3.png',
+  imageId: 'product-img-3'}
 const OPTIONS = {
   once: { label: 'ซื้อแบบครั้งเดียว', price: '฿1,500.00' },
   '3month': { label: '3 เดือน', price: '฿1,500.00', interval: 'ทุกๆ 3 เดือน' },
@@ -36,7 +39,7 @@ const handleAddToCart = () => {
           <div className="Product1-section">
 
             <div className="Product1-img">
-                <img id='product-img-3' src="/box-1.png" alt="" />
+                <img id='product-img-3' src="/box3.png" alt="" />
             </div>
           </div>
       </div> 

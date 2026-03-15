@@ -388,7 +388,7 @@ body{
   position: fixed;
   top: 0;
   right: 0;
-  width: 360px;
+  width: 660px;
   max-width: 100%;
   height: 100%;
   background: #fff;
@@ -418,7 +418,7 @@ body{
 }
 
 .cart-sidebar-close {
-  width: 36px;
+  width: 100px;
   height: 36px;
   border: none;
   background: #f0f0f0;
@@ -440,6 +440,7 @@ body{
   flex: 1;
   padding: 1.25rem;
   overflow: auto;
+  width: 599px;
 }
 
 .cart-sidebar-empty,
