@@ -3,13 +3,11 @@ import Headersection from './components/headersection.jsx'
 import Navbar from './components/navbar.jsx'
 import Branding from './components/branding.jsx'
 import Footer from './components/footer.jsx'
-import { useState } from 'react'
 
-function Home({ count,cartItems}) {
-  
+function Home({ count, cartItems }) {
   return (
     <>
-      <Navbar count={count} />
+      <Navbar count={count} cartItems={cartItems} />
       <Headersection />
       <Branding />
       <div id="contact">

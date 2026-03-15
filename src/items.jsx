@@ -2,11 +2,11 @@ import '../src/style/index.css'
 import Navbar from "./components/navbar.jsx"
 import Footer from './components/footer.jsx'
 import Itemscompoun from './components/itemscompoun.jsx'
-import { useState } from 'react'
-function Items({ count,setCount}) {
+
+function Items({ count, cartItems }) {
   return (
     <>
-      <Navbar count={count}  />
+      <Navbar count={count} cartItems={cartItems} />
       <Itemscompoun />
       <div id="contact">
         <Footer />
@@ -14,4 +14,5 @@ function Items({ count,setCount}) {
     </>
   )
 }
+
 export default Items
