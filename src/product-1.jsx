@@ -3,7 +3,7 @@ import Navbar from "./components/navbar.jsx"
 import Footer from './components/footer.jsx'
 import Productcompount1 from './components/product-1-compount.jsx';
 
-function Product1({ count, setCount, cartItems, setCartItems }) {
+function Product1({ count, setCount, cartItems, setCartItems, onRemoveItem }) {
 
 const handleAddToCart = (item) => {
   setCartItems(prev => [...prev, item])
@@ -12,7 +12,7 @@ const handleAddToCart = (item) => {
 
  return (
     <>
-      <Navbar count={count} cartItems={cartItems} />
+      <Navbar count={count} cartItems={cartItems} onRemoveItem={onRemoveItem} />
       <Productcompount1 count={count} setCount={setCount} onAddToCart={handleAddToCart} />
       <div id="contact">
           <Footer />

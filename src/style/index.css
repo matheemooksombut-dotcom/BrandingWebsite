@@ -459,6 +459,15 @@ body{
   object-fit: cover;
   border-radius: 8px;
 }
+.btn-deleated-style{
+  border-radius: 20px;
+  background-color: red;
+  color: white;
+  border-style: none;
+  cursor: pointer;
+  font-size: medium;
+
+}
 
 @keyframes fadeIn {
   from { opacity: 0; }

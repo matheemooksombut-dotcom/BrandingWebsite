@@ -3,10 +3,10 @@ import Navbar from "./components/navbar.jsx"
 import Footer from './components/footer.jsx'
 import Itemscompoun from './components/itemscompoun.jsx'
 
-function Items({ count, cartItems }) {
+function Items({ count, cartItems, onRemoveItem }) {
   return (
     <>
-      <Navbar count={count} cartItems={cartItems} />
+      <Navbar count={count} cartItems={cartItems} onRemoveItem={onRemoveItem} />
       <Itemscompoun />
       <div id="contact">
         <Footer />

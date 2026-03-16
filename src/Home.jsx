@@ -4,10 +4,10 @@ import Navbar from './components/navbar.jsx'
 import Branding from './components/branding.jsx'
 import Footer from './components/footer.jsx'
 
-function Home({ count, cartItems }) {
+function Home({ count, cartItems, onRemoveItem }) {
   return (
     <>
-      <Navbar count={count} cartItems={cartItems} />
+      <Navbar count={count} cartItems={cartItems} onRemoveItem={onRemoveItem} />
       <Headersection />
       <Branding />
       <div id="contact">

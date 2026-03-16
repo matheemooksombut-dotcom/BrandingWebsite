@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
 
-function Navbar({ count, cartItems = [] }) {
+function Navbar({ count, cartItems = [], onRemoveItem }) {
   const [sidebarOpen, setSidebarOpen] = useState(false)
 
   return (
@@ -64,7 +64,13 @@ function Navbar({ count, cartItems = [] }) {
               <p>{item.optionLabel}</p>
               <p>{item.price}</p>
               {item.interval && <p>{item.interval}</p>}
-              <button>ลบรายการ</button>
+              <button className="btn-deleated-style"
+                type="button"
+                onClick={() => onRemoveItem?.(index)}
+                disabled={!onRemoveItem}
+              >
+                ลบรายการ
+              </button>
               </div>
               
           ))
